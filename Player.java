@@ -20,15 +20,17 @@ public class Player {
 	
 	// Other Methods
 	public direction getDirection(){
-		return null;
+		return null;// code for user controls (mostly mouse input, minimal keyboard input)
 	}
 	public AttackType getMove (Enemy e, boolean ranged){
 		if (ranged){
-			setMag();
+			setMag(0);
 			// do a ranged attack
+			// Enemy.fight()
 			// enemy will lose health -> goes to enemy class
 		}else{
 			setStr(0);
+			// Enemy.fight()
 			// do a melee attack
 		}
 		/* if the player wins then their magic
